@@ -1,0 +1,16 @@
+{
+    "name": "graphql-socketio-express",
+    "dockerComposeFile": [
+        "./docker-compose.yml"
+    ],
+    "service": "dev-container",
+    "workspaceFolder": "/usr/local/app",
+    "extensions": [
+        "aaron-bond.better-comments",
+        "dbaeumer.vscode-eslint",
+        "ms-azuretools.vscode-docker",
+        "streetsidesoftware.code-spell-checker",
+        "ue.alphabetical-sorter"
+    ],
+    "shutdownAction": "stopCompose"
+}
