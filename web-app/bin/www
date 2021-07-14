@@ -1,0 +1,10 @@
+#!/usr/bin/env node
+
+const fs = require('fs');
+const httpServer = require('http-server');
+
+const server = httpServer.createServer({
+    root: "src",
+});
+
+server.listen(8080);
