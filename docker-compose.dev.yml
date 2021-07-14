@@ -6,7 +6,7 @@ services:
             context: ./web-api
             dockerfile: ./.docker/Dockerfile.development
         ports:
-            - "5000:5000" # service
+            - "5000:8080" # service
             - "6000:9229" # debugger
         volumes:
             - .:/usr/src/app:cached
