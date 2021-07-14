@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start-development": "nodemon -r dotenv/config ./bin/www",
-    "start-production": "node ./bin/www"
+    "development": "nodemon ./bin/www"
   },
   "author": "Ben Bolthouse",
   "license": "ISC",
