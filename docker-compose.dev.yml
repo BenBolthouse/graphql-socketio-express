@@ -4,7 +4,7 @@ services:
     web-api:
         build:
             context: ./web-api
-            dockerfile: ./docker/Dockerfile.development
+            dockerfile: ./.docker/Dockerfile.development
         ports:
             - "5000:5000"
         volumes:
@@ -13,7 +13,7 @@ services:
     web-app:
         build:
             context: ./web-app
-            dockerfile: ./docker/Dockerfile.development
+            dockerfile: ./.docker/Dockerfile.development
         ports:
             - "5001:8080"
         volumes:
@@ -22,7 +22,7 @@ services:
     db:
         build:
             context: ./db
-            dockerfile: ./docker/Dockerfile.development
+            dockerfile: ./.docker/Dockerfile.development
         ports:
             - "5002:5432"
             
