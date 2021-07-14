@@ -1,0 +1,10 @@
+{
+    "name": "Db",
+    "dockerComposeFile": [
+        "../docker-compose.dev.yml"
+    ],
+    "service": "db",
+    "workspaceFolder": "/usr/local/app/db",
+    "extensions": [],
+    "shutdownAction": "stopCompose"
+}

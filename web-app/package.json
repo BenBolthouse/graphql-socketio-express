@@ -4,8 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start-prod": "http-server ./dist",
+    "start-dev": "http-server ./src -c-1"
   },
   "author": "Ben Bolthouse",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "http-server": "^0.12.3"
+  }
 }

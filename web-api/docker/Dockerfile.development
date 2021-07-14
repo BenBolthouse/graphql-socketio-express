@@ -1,0 +1,11 @@
+FROM node:latest
+
+RUN mkdir -p /usr/src/app
+
+COPY . /usr/src/app
+
+WORKDIR /usr/src/app/web-api
+
+RUN npm i
+
+CMD [ "node", "bin/www" ]

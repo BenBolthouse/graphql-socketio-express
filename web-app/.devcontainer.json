@@ -1,0 +1,10 @@
+{
+    "name": "Web App",
+    "dockerComposeFile": [
+        "../docker-compose.dev.yml"
+    ],
+    "service": "web-app",
+    "workspaceFolder": "/usr/src/app/web-app",
+    "extensions": [],
+    "shutdownAction": "stopCompose"
+}

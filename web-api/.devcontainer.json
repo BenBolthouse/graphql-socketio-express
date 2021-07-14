@@ -1,14 +1,13 @@
 {
-    "name": "graphql-socketio-express",
+    "name": "Web API",
     "dockerComposeFile": [
-        "./docker-compose.yml"
+        "../docker-compose.dev.yml"
     ],
-    "service": "dev-container",
-    "workspaceFolder": "/usr/local/app",
+    "service": "web-api",
+    "workspaceFolder": "/usr/src/app/web-api",
     "extensions": [
         "aaron-bond.better-comments",
         "dbaeumer.vscode-eslint",
-        "ms-azuretools.vscode-docker",
         "streetsidesoftware.code-spell-checker",
         "ue.alphabetical-sorter"
     ],
