@@ -2,4 +2,5 @@
     "files.insertFinalNewline": true,
     "files.trimFinalNewlines": true,
     "files.trimTrailingWhitespace": true,
+    "javascript.format.semicolons": "insert"
 }
