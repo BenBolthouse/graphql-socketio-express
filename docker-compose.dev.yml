@@ -6,8 +6,8 @@ services:
             context: ./web-api
             dockerfile: ./.docker/Dockerfile.development
         ports:
-            - "5000:8080" # service
-            - "6000:9229" # debugger
+            - "5000:5000"
+            - "5002:9229"
         volumes:
             - .:/usr/src/app:cached
 
@@ -16,8 +16,8 @@ services:
             context: ./web-app
             dockerfile: ./.docker/Dockerfile.development
         ports:
-            - "5001:8080" # service
-            - "6001:9229" # debugger
+            - "5010:5010"
+            - "5012:9229"
         volumes:
             - .:/usr/src/app:cached
 
@@ -26,5 +26,5 @@ services:
             context: ./db
             dockerfile: ./.docker/Dockerfile.development
         ports:
-            - "5002:5432" # service
+            - "5020:5432"
             
