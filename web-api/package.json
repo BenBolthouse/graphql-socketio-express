@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "development": "nodemon --inspect ./bin/www"
+    "development": "nodemon --inspect -r dotenv/config ./bin/www dotenv_config_path=./.env/development.env"
   },
   "author": "Ben Bolthouse",
   "license": "ISC",

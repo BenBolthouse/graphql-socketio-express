@@ -1,5 +1,9 @@
 #!/usr/bin/env node
 
-const server = require('./server');
+const config = require('../config');
+const server = require('../server');
 
-server.listen(8080, () => console.log('Server listening...'));
+const domain = config.domain || '0.0.0.0';
+const port = config.port || 8080;
+
+server.listen(port, () => console.log(`WebAPI service listening at ${domain}:${port}`));

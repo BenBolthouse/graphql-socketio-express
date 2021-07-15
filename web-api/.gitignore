@@ -1,1 +1,6 @@
+# node
 node_modules
+
+# sensitive data
+development.env
+test.env
