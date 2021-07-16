@@ -1,15 +1,7 @@
-/**
- * Container path: /usr/src/app/routes/routes.about.js
- * Project path: /routes/routes.about.js
- */
-
 const expressRouter = require('express').Router;
 
 const config = require('../config');
 
-/**
- * Provides an application route to get details about the service.
- */
 const router = expressRouter();
 
 const configClone = { ...config };

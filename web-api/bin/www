@@ -1,10 +1,5 @@
 #!/usr/bin/env node
 
-/**
- * Container path: /usr/src/app/bin/www
- * Project path: /bin/www
- */
-
 const config = require('../config');
 const server = require('../server');
 

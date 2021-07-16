@@ -1,12 +1,3 @@
-/**
- * Container path: /usr/src/app/graphql/index.js
- * Local path: /graphql/index.js
- */
-
-/**
- * Exported object configures the graphql endpoint in server config.
- */
-
 const { buildSchema } = require('graphql');
 const fs = require('fs');
 const path = require('path');
