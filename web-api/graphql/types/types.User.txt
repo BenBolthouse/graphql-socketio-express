@@ -3,7 +3,6 @@ type User {
     username: String
     firstName: String
     lastName: String
-    email: Email
     createdAt: String
     updatedAt: String
     revokedAt: String
