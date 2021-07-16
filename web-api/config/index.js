@@ -1,14 +1,14 @@
 module.exports = {
     env: process.env.NODE_ENV,
     domain: process.env.DOMAIN,
-    name: process.env.NAME,
-    port: process.env.PORT,
-    version: process.env.VERSION,
+    name: process.env.WEB_API__NAME,
+    port: process.env.WEB_API__PORT,
+    version: process.env.WEB_API__VERSION,
     db: {
-        database: process.env.DB_DATABASE,
-        host: process.env.DB_HOST,
-        password: process.env.DB_PASSWORD,
-        port: process.env.DB_PORT,
-        user: process.env.DB_USER,
+        host: process.env.DB__NAME,
+        port: process.env.DB__PORT,
+        database: process.env.POSTGRES_DB,
+        password: process.env.POSTGRES_PASSWORD,
+        username: process.env.POSTGRES_USER,
     }
 };
