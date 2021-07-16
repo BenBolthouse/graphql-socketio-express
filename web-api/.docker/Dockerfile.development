@@ -7,5 +7,7 @@ COPY . /usr/src/app
 WORKDIR /usr/src/app/web-api
 
 RUN npm i
+RUN npm i -g dotenv-cli
+RUN npm i -g sequelize-cli
 
 CMD npm run development
