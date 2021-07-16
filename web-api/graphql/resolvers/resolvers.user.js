@@ -1,17 +1,5 @@
-const User = () => ({
-    id: 1,
-    username: "bbolthouse",
-    firstName: "Ben",
-    lastName: "Botlhouse",
-    email: [
-        {
-            id: 2,
-            value: "benbolthouse@gmail.com"
-        }
-    ],
-    createdAt: "NOW",
-    updatedAt: "NOW",
-    revokedAt: null,
-});
+const { User } = require('../../db/models');
 
-module.exports = User;
+module.exports.getUserById = async ({ id }) => {
+    return await User.findByPk(id);
+};
