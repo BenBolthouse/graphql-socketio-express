@@ -1,8 +1,3 @@
-/**
- * Container path: /usr/src/app/server.js
- * Project path: /server.js
- */
-
 const { graphqlHTTP } = require('express-graphql');
 const express = require('express');
 const morgan = require('morgan');
@@ -10,7 +5,7 @@ const morgan = require('morgan');
 const config = require('./config');
 const aboutRoutes = require('./routes/routes.about');
 
-const graphqlConfig = require('./graphql');
+const { graphiql, resolvers, schema } = require('./graphql');
 
 /**
  * Express application object with middleware configuration.
@@ -20,7 +15,11 @@ const server = express();
 server.use(morgan('dev'));
 
 // GraphQL endpoint
-server.use(`/v${config.version}/graphql`, graphqlHTTP(graphqlConfig));
+server.use(`/v${config.version}/graphql`, graphqlHTTP({
+    rootValue: resolvers,
+    schema,
+    graphiql,
+}));
 
 // About service endpoint
 server.use(`/v${config.version}`, aboutRoutes);
