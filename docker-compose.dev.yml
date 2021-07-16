@@ -6,20 +6,22 @@ services:
             context: ./web-api
             dockerfile: ./.docker/Dockerfile.development
         ports:
-            - "5000:5000"
+            - "5000:8080"
             - "5002:9229"
         volumes:
             - .:/usr/src/app:cached
+        env_file: ./.env/dev.env
 
     web-app:
         build:
             context: ./web-app
             dockerfile: ./.docker/Dockerfile.development
         ports:
-            - "5010:5010"
+            - "5010:8080"
             - "5012:9229"
         volumes:
             - .:/usr/src/app:cached
+        env_file: ./.env/dev.env
 
     db:
         build:
@@ -27,4 +29,5 @@ services:
             dockerfile: ./.docker/Dockerfile.development
         ports:
             - "5020:5432"
+        env_file: ./.env/dev.env
             
