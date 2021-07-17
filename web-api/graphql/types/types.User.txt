@@ -1,9 +1,0 @@
-type User {
-    id: Int
-    username: String
-    firstName: String
-    lastName: String
-    createdAt: String
-    updatedAt: String
-    revokedAt: String
-}

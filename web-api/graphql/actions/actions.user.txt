@@ -1,3 +1,0 @@
-type Query {
-    getUserById(id: Int): User
-}
